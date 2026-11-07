@@ -75,3 +75,23 @@ nav a { text-decoration: none; font-weight: 500; font-size: .95rem; }
 .portrait { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 4px solid var(--card); box-shadow: 0 10px 30px rgba(20,33,61,.15); }
 @media (max-width: 640px) { .about { flex-direction: column; align-items: flex-start; gap: 24px; } .portrait { width: 160px; height: 160px; } }
 .school-cta { text-align: center; margin-top: 36px; }
+
+.apps-hero { padding-bottom: 56px; }
+.subject-nav { list-style: none; padding: 0; margin: 28px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.subject-nav a { display: inline-block; text-decoration: none; font-weight: 500; font-size: .92rem; padding: 8px 16px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--card); transition: border-color .2s, color .2s; }
+.subject-nav a:hover { border-color: var(--accent); color: var(--accent-dark); }
+.subject { padding: 64px 0; scroll-margin-top: 64px; }
+.subject h2 { margin-bottom: .3em; }
+.subject-desc { color: var(--muted); margin: 0 0 28px; max-width: 62ch; }
+.apps { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.app { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; }
+.app h3 { font-size: 1.15rem; margin-bottom: .4em; }
+.app > p:not(.tag) { color: var(--muted); margin: 0 0 16px; flex: 1; }
+.app .tag { margin-bottom: 8px; }
+.app-link { align-self: flex-start; font-weight: 600; color: var(--accent-dark); text-decoration: none; }
+.app-link::after { content: " \2192"; }
+.app-link:hover { text-decoration: underline; }
+.app-placeholder { background: transparent; border-style: dashed; }
+.app-placeholder > p:not(.tag) { margin-bottom: 0; }
+nav a[aria-current="page"] { color: var(--accent-dark); }
+.footer a { color: inherit; }
