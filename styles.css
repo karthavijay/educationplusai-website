@@ -70,3 +70,7 @@ nav a { text-decoration: none; font-weight: 500; font-size: .95rem; }
 .offer .btn-ghost.btn-small { color: var(--ink); }
 .offer .btn-ghost.btn-small:hover { color: #fff; }
 @media (max-width: 420px) { .tiers li { grid-template-columns: 1fr; gap: 2px; } }
+
+.about { display: flex; gap: 40px; align-items: center; }
+.portrait { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 4px solid var(--card); box-shadow: 0 10px 30px rgba(20,33,61,.15); }
+@media (max-width: 640px) { .about { flex-direction: column; align-items: flex-start; gap: 24px; } .portrait { width: 160px; height: 160px; } }
