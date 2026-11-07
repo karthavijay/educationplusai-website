@@ -57,3 +57,16 @@ nav a { text-decoration: none; font-weight: 500; font-size: .95rem; }
 .contact { text-align: center; }
 .contact p { color: var(--muted); }
 .footer { padding: 28px 0; font-size: .9rem; color: var(--muted); border-top: 1px solid var(--line); }
+
+.school .lead { margin-bottom: 32px; }
+.offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (max-width: 760px) { .offers { grid-template-columns: 1fr; } }
+.offer { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; }
+.offer-desc { color: var(--muted); margin: 0 0 16px; }
+.tiers { list-style: none; padding: 0; margin: 0 0 20px; flex: 1; }
+.tiers li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); font-size: .95rem; color: var(--muted); }
+.tier { font-weight: 600; color: var(--ink); }
+.offer .btn { align-self: flex-start; }
+.offer .btn-ghost.btn-small { color: var(--ink); }
+.offer .btn-ghost.btn-small:hover { color: #fff; }
+@media (max-width: 420px) { .tiers li { grid-template-columns: 1fr; gap: 2px; } }
