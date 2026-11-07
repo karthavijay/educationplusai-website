@@ -63,7 +63,7 @@ nav a { text-decoration: none; font-weight: 500; font-size: .95rem; }
 @media (max-width: 760px) { .offers { grid-template-columns: 1fr; } }
 .offer { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; }
 .offer-desc { color: var(--muted); margin: 0 0 16px; }
-.tiers { list-style: none; padding: 0; margin: 0 0 20px; flex: 1; }
+.tiers { list-style: none; padding: 0; margin: 0; flex: 1; }
 .tiers li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); font-size: .95rem; color: var(--muted); }
 .tier { font-weight: 600; color: var(--ink); }
 .offer .btn { align-self: flex-start; }
@@ -74,3 +74,4 @@ nav a { text-decoration: none; font-weight: 500; font-size: .95rem; }
 .about { display: flex; gap: 40px; align-items: center; }
 .portrait { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 4px solid var(--card); box-shadow: 0 10px 30px rgba(20,33,61,.15); }
 @media (max-width: 640px) { .about { flex-direction: column; align-items: flex-start; gap: 24px; } .portrait { width: 160px; height: 160px; } }
+.school-cta { text-align: center; margin-top: 36px; }
